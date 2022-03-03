@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/api/data.php';
+include __DIR__ . '/includes/data/discs.php';
 ?>
 
 
@@ -15,7 +15,18 @@ include __DIR__ . '/api/data.php';
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <div class="album-card">
+            <?php foreach ($discs as $disc) : ?>
+                <img src="<?= $disc['poster'] ?>" alt="<?= $disc['title'] ?>">
+                <h5><?= $disc['title'] ?></h5>
+                <div class="description">
+                    <span class="author"><?= $disc['author'] ?></span>
+                    <span class="year"><?= $disc['year'] ?></span>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </main>
 </body>
 
 </html>
