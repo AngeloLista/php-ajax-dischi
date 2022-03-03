@@ -16,7 +16,9 @@ include __DIR__ . '/includes/data/discs.php';
 </head>
 
 <body>
-    <header></header>
+    <header class="d-flex justify-content-start align-items-center">
+        <img src="img/spotify-logo.png" alt="Spotify Logo" />
+    </header>
     <main>
         <section id="albums" class="container">
             <?php foreach ($discs as $disc) : ?>

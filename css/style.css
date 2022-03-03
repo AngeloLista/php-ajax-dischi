@@ -3,7 +3,19 @@ body {
     background-color: #1e2d3b;
 }
 
+/* Header */
+header {
+    height: 70px;
+    background-color: #2e3a46;
+    color: white;
+}
+header img {
+    height: 100%;
+    padding: 10px;
+}
 
+
+/* Main */
 #albums {
   display: flex;
   flex-wrap: wrap;
